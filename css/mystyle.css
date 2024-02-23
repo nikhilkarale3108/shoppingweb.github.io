@@ -1,3 +1,20 @@
+/*navigation menu*/
+.bg-custom {
+background-color:#0a7991;
+}
+
+.nav-link, .navbar-brand {
+	color:white;
+}
+
+
+.navbar-text a {
+	color:white;
+}
+
+
+/*hero section*/
+
 .jumbotron 
 {
 background-color:#0a7991;
@@ -11,15 +28,45 @@ color:white;
 	width: 500px;
 }
 
-.bg-custom {
-background-color:#0a7991;
+
+
+
+
+
+/*About us Section*/
+
+#about #brandname, #product #brandname{
+	color:#0a7991;
 }
 
-.nav-link, .navbar-brand {
-	color:white;
+#about p {
+	text-align: justify;
+	user-select: none;
 }
 
-.navbar-text a {
-	color:white;
+
+/*product section*/
+
+#product #product_icons  {
+	width: 40px;
 }
 
+#product #product_icons img {
+	background-color: #0a7991;
+	margin: 5px 0px;
+	padding: 5px;
+
+}
+
+#product_icons {
+	position: absolute;
+	top:25px;
+	opacity: 0;
+	transition: opacity 0.3s;
+	cursor: pointer;
+}
+
+#product .card:hover #product_icons
+{
+		opacity: 1;
+}
